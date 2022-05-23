@@ -1,0 +1,283 @@
+{
+    "code": 0,
+    "message": "success",
+    "salesorder": {
+      "salesorder_id": "2440630000000238005",
+      "documents": [
+        
+      ],
+      "zcrm_potential_id": "",
+      "zcrm_potential_name": "",
+      "salesorder_number": "SO-00001",
+      "date": "2021-03-08",
+      "offline_created_date_with_time": "",
+      "tracking_url": "",
+      "has_discount": false,
+      "status": "confirmed",
+      "color_code": "",
+      "current_sub_status_id": "",
+      "current_sub_status": "confirmed",
+      "sub_statuses": [
+        
+      ],
+      "shipment_date": "",
+      "reference_number": "",
+      "customer_id": "2440630000000240027",
+      "customer_name": "Usuario Prueba",
+      "contact_persons": [
+        
+      ],
+      "contact_person_details": [
+        {
+          "phone": "",
+          "mobile": "",
+          "last_name": "Prueba",
+          "contact_person_id": "2440630000000240029",
+          "first_name": "Usuario",
+          "email": "correoderprueba@gmail.com"
+        }
+      ],
+      "source": "Client",
+      "contact_category": "",
+      "currency_id": "2440630000000072055",
+      "currency_code": "COP",
+      "currency_symbol": "COP",
+      "exchange_rate": 1.0,
+      "is_discount_before_tax": true,
+      "discount_type": "item_level",
+      "estimate_id": "",
+      "delivery_method": "",
+      "delivery_method_id": "",
+      "is_inclusive_tax": false,
+      "tax_rounding": "entity_level",
+      "order_status": "confirmed",
+      "invoiced_status": "partially_invoiced",
+      "shipped_status": "pending",
+      "sales_channel": "direct_sales",
+      "sales_channel_formatted": "Ventas directas",
+      "account_identifier": "",
+      "integration_id": "",
+      "is_dropshipped": false,
+      "is_backordered": false,
+      "is_manually_fulfilled": false,
+      "has_qty_cancelled": false,
+      "created_by_email": "gerencia@cova.store",
+      "total_quantity": 7.0,
+      "line_items": [
+        {
+          "line_item_id": "2440630000000238013",
+          "variant_id": "2440630000000186001",
+          "item_id": "2440630000000186001",
+          "is_returnable": true,
+          "product_id": "2440630000000186001",
+          "attribute_name1": "",
+          "attribute_name2": "",
+          "attribute_name3": "",
+          "attribute_option_name1": "",
+          "attribute_option_name2": "",
+          "attribute_option_name3": "",
+          "attribute_option_data1": "",
+          "attribute_option_data2": "",
+          "attribute_option_data3": "",
+          "is_combo_product": false,
+          "warehouse_id": "2440630000000191009",
+          "warehouse_name": "Cova",
+          "sku": "1212",
+          "name": "Productos de prueba",
+          "group_name": "Productos de prueba",
+          "description": "",
+          "item_order": 0,
+          "bcy_rate": 10000.0,
+          "rate": 10000.0,
+          "quantity": 5.0,
+          "quantity_manuallyfulfilled": 0.0,
+          "unit": "pcs",
+          "pricebook_id": "",
+          "header_id": "",
+          "header_name": "",
+          "discount_amount": 0.0,
+          "discount": 0.0,
+          "tax_id": "",
+          "tax_name": "",
+          "tax_type": "tax",
+          "tax_percentage": 0,
+          "item_total": 50000.0,
+          "item_sub_total": 50000.0,
+          "product_type": "goods",
+          "line_item_type": "goods",
+          "item_type": "inventory",
+          "is_invoiced": true,
+          "is_unconfirmed_product": false,
+          "tags": [
+            
+          ],
+          "image_name": "",
+          "image_type": "",
+          "image_document_id": "",
+          "document_id": "",
+          "item_custom_fields": [
+            
+          ],
+          "quantity_invoiced": 5.0,
+          "quantity_packed": 0.0,
+          "quantity_shipped": 0.0,
+          "quantity_cancelled": 0.0,
+          "quantity_invoiced_cancelled": 0.0,
+          "quantity_returned": 0.0
+        }
+      ],
+      "submitter_id": "",
+      "approver_id": "",
+      "submitted_date": "",
+      "submitted_by": "",
+      "price_precision": 2,
+      "is_emailed": false,
+      "has_unconfirmed_line_item": false,
+      "picklists": [
+        
+      ],
+      "purchaseorders": [
+        
+      ],
+      "warehouses": [
+        {
+          "warehouse_id": "2440630000000191009",
+          "warehouse_name": "Cova",
+          "address": "",
+          "city": "",
+          "state": "Antioquia",
+          "country": "Colombia",
+          "zip": "",
+          "phone": "",
+          "email": "cova@addapptech.com",
+          "is_primary": true,
+          "status": "active",
+          "sales_channels": [
+            
+          ]
+        }
+      ],
+      "billing_address_id": "2440630000000240030",
+      "billing_address": {
+        "address": "",
+        "street2": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "country": "",
+        "country_code": "",
+        "state_code": "",
+        "fax": "",
+        "phone": "",
+        "attention": ""
+      },
+      "shipping_address_id": "2440630000000240032",
+      "shipping_address": {
+        "address": "",
+        "street2": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "country": "",
+        "country_code": "",
+        "state_code": "",
+        "fax": "",
+        "phone": "",
+        "attention": ""
+      },
+      "is_test_order": false,
+      "notes": "",
+      "terms": "",
+      "payment_terms": 0,
+      "payment_terms_label": "Pagadero a la recepción",
+      "custom_fields": [
+        
+      ],
+      "custom_field_hash": {
+        
+      },
+      "template_id": "2440630000000019003",
+      "template_name": "Standard Template",
+      "page_width": "8.27in",
+      "page_height": "11.69in",
+      "orientation": "portrait",
+      "template_type": "standard",
+      "created_time": "2021-03-08T11:07:10-0500",
+      "last_modified_time": "2021-03-09T15:19:32-0500",
+      "created_by_id": "2440630000000072001",
+      "created_date": "2021-03-08",
+      "last_modified_by_id": "2440630000000072001",
+      "attachment_name": "",
+      "can_send_in_mail": false,
+      "salesperson_id": "2440630000000137047",
+      "salesperson_name": "Juan Fernando Cock",
+      "merchant_id": "",
+      "merchant_name": "",
+      "pickup_location_id": "",
+      "discount": 0.0,
+      "discount_applied_on_amount": 0.0,
+      "is_adv_tracking_in_package": false,
+      "shipping_charge_tax_id": "",
+      "shipping_charge_tax_name": "",
+      "shipping_charge_tax_type": "",
+      "shipping_charge_tax_percentage": "",
+      "shipping_charge_tax": "",
+      "shipping_charge_exclusive_of_tax": 0.0,
+      "shipping_charge_inclusive_of_tax": 0.0,
+      "shipping_charge_tax_formatted": "",
+      "shipping_charge_exclusive_of_tax_formatted": "COP0.00",
+      "shipping_charge_inclusive_of_tax_formatted": "COP0.00",
+      "shipping_charge": 0.0,
+      "bcy_shipping_charge": 0.0,
+      "adjustment": 0.0,
+      "bcy_adjustment": 0.0,
+      "adjustment_description": "Ajuste",
+      "roundoff_value": 0.0,
+      "transaction_rounding_type": "no_rounding",
+      "sub_total": 181200.0,
+      "bcy_sub_total": 181200.0,
+      "sub_total_inclusive_of_tax": 0.0,
+      "sub_total_exclusive_of_discount": 181200.0,
+      "discount_total": 0.0,
+      "bcy_discount_total": 0.0,
+      "discount_percent": 0.0,
+      "tax_total": 0.0,
+      "bcy_tax_total": 0.0,
+      "total": 181200.0,
+      "bcy_total": 181200.0,
+      "taxes": [
+        
+      ],
+      "packages": [
+        
+      ],
+      "invoices": [
+        {
+          "invoice_id": "2440630000000245011",
+          "invoice_number": "INV-000001",
+          "reference_number": "SO-00001",
+          "status": "overdue",
+          "date": "2021-03-08",
+          "due_date": "2021-03-08",
+          "total": 50000.0,
+          "balance": 50000.0
+        }
+      ],
+      "salesreturns": [
+        
+      ],
+      "payments": [
+        
+      ],
+      "creditnotes": [
+        
+      ],
+      "refunds": [
+        
+      ],
+      "balance": 181200.0,
+      "approvers_list": [
+        
+      ]
+    }
+  }

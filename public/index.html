@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://live.zwidgets.com/js-sdk/1.0.5/ZohoEmbededAppSDK.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./dist/css/bootstrap-msg.css" />
+    
+</head>
+<body>
+    <div id="headerorder" style="display:none;">
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div id="chat-container">
+                    <div id="chat-window">
+                        <div id="output">
+                            <div id="actions"></div>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Escribe un mensaje aquí" aria-label="Recipient's username" aria-describedby="button-addon2" id= "message" name = "message">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="send"><i class="fa fa-send"></i></button>
+                        <button class="btn btn-outline-secondary" type="button" id="send2"><i class="fa fa-handshake-o"></i></button>
+                    </div>
+                </div>
+                <a id="flip" >Ver informacion cliente <i class="fa fa-eye"></i></a>
+                <a id="flip2" >Ver informacion cliente <i class="fa fa-eye"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12" style="padding-right: 30px; padding-left: 30px;">
+                <div id="formodificar" name = "formodificar">     
+                    <script> 
+                        $(document).ready(function(){
+                            $("#flip").click(function(){
+                                $("#infoclien").slideToggle("slow");
+                            });
+                        });
+                        $(document).ready(function(){
+                            $("#flip2").click(function(){
+                                $("#infoclien2").slideToggle("slow");
+                            });
+                        });
+                    </script>
+                    <style> 
+                        #infoclien {
+        
+                        display: none;
+                        }
+                        #infoclien2 {
+        
+                            display: none;
+                        }
+                    </style>
+                    <div  id="infoclien">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <Label>Nombre</Label>
+                                    <input type="text" class="form-control" placeholder="Nombre" id ="updateNombre" name="updateNombre">
+                                </div>
+                                <div class="row">
+                                    <Label>Apellidos</Label>
+                                    <input type="text" class="form-control" placeholder="Apellidos" id ="updateApellidos" name="updateApellidos">
+                                </div>
+                                <div class="row">
+                                    <Label>Correo electrónico</Label>
+                                    <input type="text" class="form-control" placeholder="Correo electrónico" id ="updateCorreoelectronicoprincipal" name="updateCorreoelectronicoprincipal">
+                                </div>
+                                <div class="row">
+                                    <Label>Empresa</Label>
+                                    <input type="text" class="form-control" placeholder="Empresa" id ="updateempresa" name="updateempresa">
+                                </div>
+                                <div class="row">
+                                    <Label>Título</Label>
+                                    <input type="text" class="form-control" placeholder="Título" id="updatetitulo" name ="">
+                                </div>
+                                <div class="row">
+                                    <Label>Nombre</Label>
+                                    <input type="text" class="form-control" placeholder="Teléfono" id="updatetelefono" name="updatetelefono">
+                                </div>
+                                <div class="row">
+                                    <Label>Sitio web</Label>
+                                    <input type="text" class="form-control" placeholder="Sitio web" id="updateSitioweb" name = "updateSitioweb">
+                                </div>
+                                <div class="row">
+                                    <Label>Correo electrónico secundario</Label>
+                                    <input type="text" class="form-control" placeholder="Correo electrónico secundario" id="uptateCorreoelectronico" name="uptateCorreoelectronico">
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <Label>ID de Skype</Label>
+                                    <input type="text" class="form-control" placeholder="ID de Skype" id="updateIDSkype" name="updateIDSkype">
+                                </div>
+                                <div class="row">
+                                    <Label>Calle</Label>
+                                    <input type="text" class="form-control" placeholder="Calle" id="updateCalle" name="updateCalle">
+                                </div>
+                                <div class="row">
+                                    <Label>Ciudad</Label>
+                                    <input type="text" class="form-control" placeholder="Ciudad" id="updateCiudad" name = "updateCiudad">
+                                </div>
+                                <div class="row">
+                                    <Label>Estado</Label>
+                                    <input type="text" class="form-control" placeholder="Estado" id="updateEstado" name="updateEstado">
+                                </div>
+                                <div class="row">
+                                    <Label>País</Label>
+                                    <input type="text" class="form-control" placeholder="País" id="updatePais" name="updatePais">
+                                </div>
+                                <div class="row">
+                                    <Label>Código postal</Label>
+                                    <input type="text" class="form-control" placeholder="Código postal" id="updateCodigopostal" name="updateCodigopostal" >
+                                </div>
+                                <div class="row">
+                                    <Label>Barrio</Label>
+                                    <input type="text" class="form-control" placeholder="Barrio" id="updateBarrio" name="updateBarrio" >
+                                </div>
+                                <div class="row">
+                                    <Label>Descrición</Label>
+                                    <textarea name="updateDescripcion" class="form-control" id="updateDescripcion" placeholder="Descrición"></textarea>
+                                </div>
+                            </div>
+                        </div>
+    
+    
+
+                        <br>
+                        <div class="row">
+                            <button class="btn btn-outline-secondary" type="button" onclick="UPDATEPOSIBLECLIENTE()" >Actualizar <i class="fa fa-id-card"></i></button>
+                        </div>
+                        <br>
+                    </div>
+                    <div  id="infoclien2">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <Label>Nombre</Label>
+                                    <input type="text" class="form-control" placeholder="Nombre" id ="updateNombre2" name="updateNombre2">
+                                </div>
+                                <div class="row">
+                                    <Label>Apellidos</Label>
+                                    <input type="text" class="form-control" placeholder="Apellidos" id ="updateApellidos2" name="updateApellidos2">
+                                </div>
+                                <div class="row">
+                                    <Label>Correo electrónico</Label>
+                                    <input type="text" class="form-control" placeholder="Correo electrónico" id ="updateCorreoelectronicoprincipal2" name="updateCorreoelectronicoprincipal2">
+                                </div>
+
+                                <div class="row">
+                                    <Label>Documuento</Label>
+                                    <input type="text" class="form-control" placeholder="Documento" id="updateDocumuento" name ="">
+                                </div>
+                                <div class="row">
+                                    <Label>Teléfono</Label>
+                                    <input type="text" class="form-control" placeholder="Teléfono" id="updatetelefono2" name="updatetelefono2">
+                                </div>
+                                <div class="row">
+                                    <Label>Correo electrónico secundario</Label>
+                                    <input type="text" class="form-control" placeholder="Correo electrónico secundario" id="uptateCorreoelectronico2" name="uptateCorreoelectronico2">
+                                </div>
+
+                                <div class="row">
+                                    <Label>Otro teléfono</Label>
+                                    <input type="text" class="form-control" placeholder="Otro teléfono" id="updateOtrotelefono2" name="updateOtrotelefono2" >
+                                </div>
+
+
+                                <div class="row">
+                                    <Label>Descrición</Label>
+                                    <textarea name="updateDescripcion2" class="form-control" id="updateDescripcion2" placeholder="Descrición"></textarea>
+                                </div>
+                 
+
+                            </div>
+                            <div class="col-sm-6">
+
+                                <div class="row">
+                                    <Label>Departamento</Label>
+                                    <input type="text" class="form-control" placeholder="Departamento" id="updateDepartamento2" name="updateDepartamento2" >
+                                </div>
+                                <div class="row">
+                                    <Label>Teléfono particular</Label>
+                                    <input type="text" class="form-control" placeholder="Teléfono particular" id="updateTelefonoparticular2" name="updateTelefonoparticular2" >
+                                </div>
+
+                                <div class="row">
+                                    <Label>Calle</Label>
+                                    <input type="text" class="form-control" placeholder="Calle" id="updateCalle2" name="updateCalle2">
+                                </div>
+                                <div class="row">
+                                    <Label>Ciudad</Label>
+                                    <input type="text" class="form-control" placeholder="Ciudad" id="updateCiudad2" name = "updateCiudad2">
+                                </div>
+                                <div class="row">
+                                    <Label>Estado</Label>
+                                    <input type="text" class="form-control" placeholder="Estado" id="updateEstado2" name="updateEstado2">
+                                </div>
+                                <div class="row">
+                                    <Label>País</Label>
+                                    <input type="text" class="form-control" placeholder="País" id="updatePais2" name="updatePais2">
+                                </div>
+                                <div class="row">
+                                    <Label>Código postal</Label>
+                                    <input type="text" class="form-control" placeholder="Código postal" id="updateCodigopostal2" name="updateCodigopostal2" >
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <button class="btn btn-outline-secondary" type="button" onclick="UPDATEPOSIBLECLIENTE2()" >Actualizar <i class="fa fa-id-card"></i></button>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">              
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <img src="" class="imagepreview" style="width: 100%;" >
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+ 
+    <!--<script type='text/javascript' src="/socket.io/socket.io.js" charset="utf-8"></script>
+    -->
+    <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+    <script src="/controlzoho2.js"></script>
+    <script type='text/javascript' src="/chat2.js" charset="utf-8"></script>
+    <script type='text/javascript' src="/js/bootstrap.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./dist/js/bootstrap-msg.js"></script>
+    <script>
+
+        function abririmajen(img){
+            console.log(this.location.href);
+            $('.imagepreview').attr('src',img);
+            $('#imagemodal').modal('show');   
+        }
+    </script>
+
+</body>
+</html>

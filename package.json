@@ -1,0 +1,21 @@
+{
+  "name": "Projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonobject": "^2.0.0",
+    "node-cron": "^2.0.3",
+    "socket.io": "^3.1.0",
+    "twilio": "^3.55.0",
+    "unirest": "^0.6.0"
+  }
+}
